@@ -1,5 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-  lintOnSave: false
+  lintOnSave: false   // 当保存时不进行eslint的检查
 })

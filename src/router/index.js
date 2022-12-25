@@ -10,8 +10,9 @@ Vue.use(VueRouter)
 // 或者，只是一个组件配置对象。
 // 我们晚点再讨论嵌套路由。
 const routes = [
-    { path: '/', redirect: '/login'},
-    { path: '/login', name: 'login', component: ()=> import('@/components/Login')}
+    { path: '/', redirect: '/home'},
+    { path: '/login', name: 'login', component: ()=> import('@/components/Login')},
+    { path: '/home', name: 'home', component: ()=> import('@/views/Main')}
   ]
   
   // 3. 创建 router 实例，然后传 `routes` 配置
